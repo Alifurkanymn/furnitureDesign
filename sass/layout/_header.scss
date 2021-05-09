@@ -1,0 +1,43 @@
+header{
+   width: 100vw;
+   background-color: $color-first;
+   height: 100px;
+   position: fixed;
+   z-index: 10;
+   .header__top{
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      &-logo{
+         img{
+            cursor: pointer;
+            margin: 10px 0 10px 30px;
+            width: 75px;
+            height: 75px;
+         }
+      }
+
+      &-menu{
+         ul{
+            display: flex;
+
+            li{
+               margin-right: 30px;
+               a{
+                  cursor: pointer;
+                  padding-left: 23px;
+                  padding-right: 23px;
+                  text-transform: uppercase;
+                  color: $color-second;
+                  font-weight: bold;
+                  letter-spacing: 4px;
+                  font-size: 13px;
+               }
+            }
+         }
+      }
+   }
+
+}
